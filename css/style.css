@@ -1,0 +1,54 @@
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #4B527E;
+
+}
+header{
+    height: 50px;
+    background-color: #E5C3A6;
+}
+
+.header-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.header-list li {
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+.header-list li a{
+    display: block;
+    padding: 5px 5px;
+    /* background-color: #4B527E; */
+    text-decoration: none;
+    /* color: #E5C3A6; */
+    border-radius: 20%;
+}
+section{
+    min-height: 400px;
+}
+section.home{
+    background-color: #7C81AD;
+}
+section.about{
+    background-color: #4B527E;
+}
+section.portfolio{
+    background-color: #7C81AD;
+}
+section.contact{
+    background-color: #4B527E;
+}
+.active{
+    background-color: #4B527E;
+}
+.active a{
+    color: #E5C3A6
+}
