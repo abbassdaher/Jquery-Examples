@@ -24,6 +24,12 @@ $(window).scroll(function () {
     console.log("yes");
 });
 // Dynamic Taps
+  $(".header-list li a" ).click(function(){
+    var id = $(this).attr("id");
+    $("body section").hide();;
+    $("."+id).fadeIn()
+    console.log("."+id);
+  });
 // Filter Images
 // Smooth Scroll Header App
 // Scroll To Top App

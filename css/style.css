@@ -39,15 +39,19 @@ section{
     min-height: 400px;
 }
 section.home{
+    display: none;
     background-color: #7C81AD;
 }
 section.about{
+    display: none;
     background-color: #4B527E;
 }
 section.portfolio{
+    display: none;
     background-color: #7C81AD;
 }
 section.contact{
+    display: none;
     background-color: #4B527E;
 }
 .active{
