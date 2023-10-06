@@ -5,11 +5,15 @@
 }
 body{
   background-color: #4B527E;
+  padding-top: 50px;
 
 }
 header{
+    position: fixed;
+    width: 100%;
     height: 50px;
     background-color: #E5C3A6;
+    top: 0;
 }
 
 .header-list{
@@ -51,4 +55,7 @@ section.contact{
 }
 .active a{
     color: #E5C3A6
+}
+.SectionActive{
+    background-color: #4B527E;
 }

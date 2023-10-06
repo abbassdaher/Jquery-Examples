@@ -5,7 +5,22 @@ $(".header-list li").click(function () {
     
 });
 // Window App
+var homeTopOffset = $(".home").offset().top;
+console.log(homeTopOffset);
 $(window).scroll(function () { 
+
+    if($(window).scrollTop() > 0){
+        $("header").css({
+            "opacity": "0.6",
+            "box-shadow": "2px 2px 5px"
+        });
+    }
+    else{
+        $("header").css({
+            "opacity": "1",
+            "box-shadow": ""
+        }); 
+    }
     console.log("yes");
 });
 // Dynamic Taps
