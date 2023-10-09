@@ -24,13 +24,18 @@ $(window).scroll(function () {
     console.log("yes");
 });
 // Dynamic Taps
+$("body section").show()
+$(".logo a").click(function(){
+    $("body section").show()
+})
   $(".header-list li a" ).click(function(){
     var id = $(this).attr("id");
-    $("body section").hide();;
+    $("body section").hide();
     $("."+id).fadeIn()
     console.log("."+id);
   });
 // Filter Images
+
 // Smooth Scroll Header App
 // Scroll To Top App
 // Calculate | CountDown Characters of Textarea App
