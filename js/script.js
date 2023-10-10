@@ -35,7 +35,14 @@ $(".logo a").click(function(){
     console.log("."+id);
   });
 // Filter Images
-
+$(".bullet li").click(function () {
+    var getID = $(this).attr("id")
+    var img = $("images-list").find('div').attr("class","getID");
+    $("."+getID).siblings().hide()
+    $("."+getID).show()
+    console.log("."+getID);
+}
+);
 // Smooth Scroll Header App
 // Scroll To Top App
 // Calculate | CountDown Characters of Textarea App

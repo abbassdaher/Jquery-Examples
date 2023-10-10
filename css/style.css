@@ -1,14 +1,16 @@
-*{
-  margin: 0;  
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-  background-color: #4B527E;
-  padding-top: 50px;
+
+body {
+    background-color: #4B527E;
+    padding-top: 50px;
 
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     height: 50px;
@@ -16,26 +18,30 @@ header{
     top: 0;
 }
 
-.header-list{
+.header-list {
     display: flex;
     justify-content: center;
     list-style: none;
 
 }
-.logo{
+
+.logo {
     width: 100px;
     align-items: flex-start;
     display: inline-block;
 }
-.logo-img{
+
+.logo-img {
     width: 100%;
 }
+
 .header-list li {
     margin-top: 10px;
     margin-right: 5px;
 
 }
-.header-list li a{
+
+.header-list li a {
     display: block;
     padding: 5px 5px;
     /* background-color: #4B527E; */
@@ -43,31 +49,78 @@ header{
     /* color: #E5C3A6; */
     border-radius: 20%;
 }
-section{
+
+section {
     min-height: 400px;
 }
-section.home{
+
+section.home {
     display: none;
     background-color: #7C81AD;
 }
-section.about{
+
+section.about {
     display: none;
     background-color: #4B527E;
 }
-section.portfolio{
+
+section.portfolio {
     display: none;
     background-color: #7C81AD;
+
 }
-section.contact{
+
+.images-list{
+    display: grid;
+    grid-template-columns:auto auto auto auto  ;
+    gap: 10px;
+    margin: 0px 10px;
+}
+.images-list div{
+}
+.images-list div img{
+    width: 100%;
+    height: 200px;
+}
+.img1:hover{
+    opacity: 0.7;
+
+
+}
+
+.first-img img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.bullet {
+    display: flex;
+    flex-direction: row;
+    color: #E5C3A6;
+    justify-content: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.bullet li {
+    margin-right: 5px;
+    
+}
+
+
+section.contact {
     display: none;
     background-color: #4B527E;
 }
-.active{
+
+.active {
     background-color: #4B527E;
 }
-.active a{
+
+.active a {
     color: #E5C3A6
 }
-.SectionActive{
+
+.SectionActive {
     background-color: #4B527E;
 }
