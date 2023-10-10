@@ -40,6 +40,7 @@ $(".bullet li").click(function () {
     var img = $("images-list").find('div').attr("class","getID");
     $("."+getID).siblings().hide()
     $("."+getID).show()
+    $("#"+getID +" i").addClass("fa fa-circle")
     console.log("."+getID);
 }
 );
