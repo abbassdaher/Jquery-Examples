@@ -54,8 +54,26 @@ $(".header-list li a").click(function () {
             scrollTop: $("."+id).offset().top-headerHeight
                     }
     )
-
-
+});
+//scrollo top button
+$()
+var aboutOffset = $(".about").offset().top
+$(window).scroll(function () { 
+    if($(window).scrollTop() > aboutOffset){
+        $(".scrollTOP").fadeIn()
+        
+    }else{
+        $(".scrollTOP").fadeOut();
+    }
+    
+    
 
 });
+$(".scrollTOP").click(function () { 
+    $("body,html").animate({
+        scrollTop: $(".home").offset().top-50
+
+    },900)
+});
+
 // Calculate | CountDown Characters of Textarea App

@@ -7,6 +7,7 @@
 body {
     background-color: #4B527E;
     padding-top: 50px;
+    z-index: -1;
 
 }
 
@@ -70,29 +71,32 @@ section.portfolio {
 
 }
 
-.images-list{
+.images-list {
     display: grid;
-    grid-template-columns:auto auto auto auto  ;
+    grid-template-columns: auto auto auto auto;
     gap: 10px;
     margin: 0px 10px;
 }
-.images-list div{
-}
-.images-list div img{
+
+.images-list div {}
+
+.images-list div img {
     width: 100%;
     height: 200px;
 }
-.img1:hover{
+
+.img1:hover {
     opacity: 0.7;
 
 
 }
 
-.first-img img{
+.first-img img {
     width: 100%;
     height: 100%;
     justify-content: center;
 }
+
 .bullet {
     display: flex;
     flex-direction: row;
@@ -104,7 +108,7 @@ section.portfolio {
 
 .bullet li {
     margin-right: 5px;
-    
+
 }
 
 
@@ -123,4 +127,15 @@ section.contact {
 
 .SectionActive {
     background-color: #4B527E;
+}
+
+.scrollTOP {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.scrollTOP i {
 }
