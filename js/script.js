@@ -77,3 +77,9 @@ $(".scrollTOP").click(function () {
 });
 
 // Calculate | CountDown Characters of Textarea App
+$("textarea").keyup(function (e) { 
+    if(e.target.value.length > 50){
+        e.target.value = e.target.value.substr(0,50)
+    }
+    console.log();
+});
